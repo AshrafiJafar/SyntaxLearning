@@ -45,17 +45,39 @@ switch (op)
         result = firstNumber / secondNumber;
         break;
     case "^":
-        result = 1;
-        for (var i = secondNumber; i >= 1; i--)
-        {
-            result *= firstNumber;
-        }
+        result = Power(firstNumber, secondNumber);
         break;
     default:
         Console.WriteLine("Operator should be one of arithmatic signs.");
         return;
 }
 Console.WriteLine(firstNumberString + " " + op + " " + secondNumberString + " = " + result);
+
+
+double Power(double number, double pow)
+{
+    double result = 1;
+    //for (var i = secondNumber; i >= 1; i--)
+    //{
+    //    result *= firstNumber;
+    //}
+    while (pow >= 1)
+    {
+        result *= number;
+        pow--;
+    }
+    return result;
+}
+
+
+//int i = 0;
+//int j = 1;
+//while(i < 100 && j < 5 )
+//{
+//    Console.WriteLine(i);
+//    i++;
+//    j++;
+//}
 
 //                      i = i + 1
 //                      i += 1;
