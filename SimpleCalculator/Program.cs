@@ -68,8 +68,14 @@ double Power(double number, double pow)
     }
     return result;
 }
-
-
+Console.WriteLine(Factoriel(5));
+int Factoriel(int number)
+{
+    int result = 0;
+    //....
+    //....
+    return result;
+}
 //int i = 0;
 //int j = 1;
 //while(i < 100 && j < 5 )
