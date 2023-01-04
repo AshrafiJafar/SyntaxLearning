@@ -24,12 +24,22 @@ while (true)
 
 
 
+//int Factoriel(int n)
+//{
+//    int fact = 1;
+//    for(var i = n; i >= 1; i--)
+//    {
+//        fact*= i;
+//    }
+//    return fact;
+//}
+
+
 int Factoriel(int n)
 {
-    int fact = 1;
-    for(var i = n; i >= 1; i--)
-    {
-        fact*= i;
-    }
-    return fact;
+    if (n == 1)
+        return 1;
+    else
+        return n * Factoriel(n - 1);
 }
+
